@@ -35,6 +35,13 @@ public class Oferta implements Serializable{
 	public void setFechaInicio(LocalDate fechaInicio) {
 		this.fechaInicio = fechaInicio;
 	}
+
+
+	@Override
+	public String toString() {
+		return "Oferta [codigoOfeta=" + codigoOfeta + ", referencia=" + referencia + ", fechaInicio=" + fechaInicio
+				+ "]";
+	}
 	
 	
 }
