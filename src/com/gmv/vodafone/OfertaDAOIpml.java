@@ -44,4 +44,14 @@ public class OfertaDAOIpml implements OfertaDAO {
 		throw new IllegalArgumentException();
 	}
 
+	@Override
+	public LocalDate getFechaInicio(int codigo) {
+		for(Oferta oferta : ofertas){
+			if(oferta.getCodigoOfeta() == codigo){
+				return oferta.getFechaInicio();
+			}
+		}
+		throw new IllegalArgumentException();
+	}
+
 }
