@@ -29,13 +29,13 @@ public class OfertaDAOIpml implements OfertaDAO {
 		}
 	
 	@Override
-	public List<Oferta> getOfertas() {
+	public List<Oferta> getOfertas() throws OfertaException {
 		
 		return ofertas;
 	}
 
 	@Override
-	public Oferta getOferta(int codigo) {
+	public Oferta getOferta(int codigo) throws OfertaException {
 		for(Oferta oferta : ofertas){
 			if(oferta.getCodigoOfeta() == codigo){
 				return oferta;
