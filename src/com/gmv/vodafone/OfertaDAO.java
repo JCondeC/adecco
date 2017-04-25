@@ -4,7 +4,7 @@ import java.util.List;
 
 public interface OfertaDAO {
 
-	List<Oferta> getOfertas();
+	List<Oferta> getOfertas() throws OfertaException;
 	
-	Oferta getOferta(int codigo);
+	Oferta getOferta(int codigo) throws OfertaException;
 }
